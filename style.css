@@ -1,0 +1,130 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+p,
+a {
+  font-size: 1.8rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.hero__background {
+  background: url(./images/smile.jpg);
+  min-height: 300px;
+  background-position: 0% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem 3.75rem;
+  margin: 0 auto;
+}
+.text-bold {
+  font-weight: 800;
+}
+.text-blue {
+  color: rgb(0, 91,130);
+}
+.section,
+.sect {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+.section__content {
+  padding: 3rem;
+}
+.section__content > h2 {
+  font-size: 2.75rem;
+  margin: 1rem 0;
+}
+.section__content > h3 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+.section__content h5 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.section__content__text {
+  padding: 0 6rem;
+}
+.section:nth-child(even) > .section__content{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.section:nth-child(even) > .section__media{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.section__media--small {
+  transform: scale(0.7);
+  justify-self: flex-end;
+}
+.page__header {
+  padding: 2rem;
+  text-align: center;
+}
+.bg-light-green {
+  background: rgb(231, 234, 222);
+}
+.bg-light-blue {
+  background: rgb(235, 242, 246);
+}
+.page__header > h1 {
+  font-size: 3rem;
+}
+
+.section__media--circle {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 25rem;
+  width: 25rem;
+}
+.section__container {
+  width: 100%;
+  padding: 1rem 3.75rem;
+  margin: 0 auto;
+  grid-gap: 3rem;
+}
+.section__media--circle > img{
+  height: 100%;
+}
+.section__container > .section {
+  grid-template-columns: auto 1fr;
+  background: rgb(249, 248, 248);
+  padding: 0 2rem;
+}
+.section__container > .section .section__content__text {
+  padding: 1rem;
+}
+.text-left {
+  text-align: left;
+}
+.category__name {
+  font-size: 3rem;
+}
+.section__media--rectangle {
+  overflow: hidden;
+  height: 100%;
+  width: 25rem;
+}
+.section__media--rectangle > img{
+  height: 100%;
+  object-fit: cover;
+}

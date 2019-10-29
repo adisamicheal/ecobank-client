@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hotels</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero__background"></div>
+    <div class="section container">
+      <h1 class="text-blue category__name" id="page-title"></h1>
+    </div>
+    <div class="page__header bg-light-blue">
+      <div class="container">
+        <p class="text-left" id="page-description">
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="section section__container" id="partner-container">
+  </div>
+  <script src="main.js"></script>
+  <script>
+    window.onload = function () {
+      loadPartners(window.location.search)
+    };
+
+  </script>
+</body>
+
+</html>

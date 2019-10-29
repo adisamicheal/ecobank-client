@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ecobank-client</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero__background"></div>
+    <div class="sect container">
+      <div class="section__content">
+        <h2 class="text-bold">Use your Advantage</h2>
+        <h3 class="text-blue">Your exclusive special offers - at a glance</h3>
+        <p>There are so many offers to make the most of when you pay with your Ecobank Advantage Visa card. Enjoy
+          excluisive discounts on everything from hotel rooms to fine dining, from luxury brand fashion to gym
+          membership and more.</p>
+      </div>
+      <div class="section__media section__media--small">
+        <img src="/images/card.png">
+      </div>
+    </div>
+  </header>
+  <div class="page__header bg-light-green">
+    <h1 class="text-bold">
+      Our Advantage Loyalty Partners
+    </h1>
+  </div>
+  <div id="section-wrapper">
+  </div>
+  <script src="main.js"></script>
+  <script>
+    window.onload = function () {
+      loadCategories()
+    };
+  </script>
+</body>
+
+</html>
